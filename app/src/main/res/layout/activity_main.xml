@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:text="Pedra, Papel e Tesoura"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/placarJogador"
+            android:text="0"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/placarComputador"
+            android:text="0"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="selecionarPedra"
+            android:src="@drawable/pedra"
+            android:contentDescription="Pedra"
+            android:background="@null"
+            android:layout_margin="10dp" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="selecionarPapel"
+            android:src="@drawable/papel"
+            android:contentDescription="Papel"
+            android:background="@null"
+            android:layout_margin="10dp" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="selecionarTesoura"
+            android:src="@drawable/tesoura"
+            android:contentDescription="Tesoura"
+            android:background="@null"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/jogadaComputador"
+        android:text="Computador: "
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textoResultado"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
